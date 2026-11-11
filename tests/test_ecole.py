@@ -2,6 +2,7 @@ import csv
 import gzip
 import hashlib
 import json
+import random
 from pathlib import Path
 
 import pytest
@@ -36,7 +37,7 @@ def test_end_to_end_source_contract(tmp_path: Path):
                          selection_rank="1", clade_group=role))
         path = source / f"{role}_shard_00000.fa.gz"
         with gzip.open(path, "wt") as handle:
-            handle.write(f">{accession} sample\n" + "ACGT" * 500 + "\n")
+            handle.write(f">{accession} sample\n" + "".join(random.Random({"train": 1, "val": 2, "test": 3}[role]).choices("ACGT", k=2000)) + "\n")
         shard_rows.append(dict(split=role, shard_index="0",
                                sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
     for path, fields, values in (
