@@ -1,0 +1,33 @@
+[project]
+name = "ecole-genomics"
+version = "0.1.0"
+description = "Reproducible Escherichia coli genome dataset preparation for genomic foundation models"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "DRAGGON Lab"}]
+dependencies = []
+
+[project.scripts]
+ecole = "ecole.cli:main"
+ecole-download = "ecole.download:main"
+
+[project.optional-dependencies]
+download = ["gdown>=5,<6"]
+
+dev = ["pytest>=8.3", "ruff>=0.11", "build>=1.2"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ecole"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
