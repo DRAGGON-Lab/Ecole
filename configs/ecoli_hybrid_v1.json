@@ -1,0 +1,60 @@
+{
+  "dataset_id": "ecoli-hybrid-v1-stage-small",
+  "source_dataset": "bacteria_titan_v1_ecoli_related_15gbp",
+  "source_folder_id": "1b_bLHFGeQP7RLhOmE8-UIkT4gEFRB2QW",
+  "seed": 17,
+  "genomes_per_role": 16,
+  "stream_length": 16384,
+  "minimum_stream_length": 129,
+  "guard_bases": 128,
+  "within_usable_bases": 1250000,
+  "heldout_bases": 125000,
+  "train_fraction": 0.8,
+  "validation_fraction": 0.1,
+  "minimum_completeness": 95,
+  "maximum_contamination": 5,
+  "scan_group_limit": 24,
+  "manifest_ids": {
+    "accessions": "1JgJBOz0msdBZrU0KGmYMdgJfByxeSHVg",
+    "shards": "1kH4luK-tZWzmgYKaebAgpoiqzx0238Y1"
+  },
+  "shard_ids": {
+    "train": [
+      "1eUVgYluKWnBexh9g4dxKpRA3qhN9cv33",
+      "1PtDceepdNx-nPdd-yIXFO6WmV2ewhBLM",
+      "1r3QsnVm17iqUWbcKDDHivGDRcSNzHCd7",
+      "1ndr9KDju435E_xcRMkPbhGA4_LhGpInt",
+      "11uWygTsxI_6SATmio58U9cKWIUuxpBBd",
+      "1TSf7kkwXwEoc1BMCkRQeyJSjfJeb74qT",
+      "1xuEnd2A4LNdS8yBtzq_rlyYbRykGtgDe",
+      "1tlRLuEJ6Y9wTB4rWTfryh6d2TPMV4uEb",
+      "1QJiRAILOApf6vd2fPkIH-oGS4w1436a-",
+      "10GsgOy_NY_4P6w3zLfkd49cNyLjxfAZd",
+      "1Q0Vwi0JPauT22TzI12IQwhDHRJgw3aBB",
+      "1_b-ar3-R8rG9zKY4JYAzRqs8WRtkTJpR",
+      "1N9fyNVn8hgYJRp1kaDQpMQzBLEmq5ycT",
+      "1Xk3EZgdsPhAkyqtr-2ojFeetlgap1GE6",
+      "1ur_DJiINeyuX9o3iTOXkTi8EIb3lxZy1",
+      "1PIsQWMjpyeJWW1Uulw892iLAfICqUu3t",
+      "1Fkqi8Ug4k6a-qGM3KeJ-pZ0VxY8DlFkf",
+      "1t_0t7Q5GgGs7VNbiOlvGwNAI781cbzbU",
+      "1FNuIOPFG98BukT9pxbXQIS1WGunYlp1_",
+      "1_c6Cdk6yRKa1BRSx6dXFbRloHBLlqXod",
+      "1wyHXJ19JGXEhMmiuoipjFoPaVBfI6ahZ",
+      "1JATH3-Jr2wLuIoUM-lVZew19853lY6Q4",
+      "1ifnqsO6koCKI6I1i6T6zxr4vAb0uNjuA",
+      "16sqigX0TviyNbLOV2at2NveUv5SqtKeP",
+      "1Z0iC8hHXsjAaL29GiROPvacW8eCqOOcZ",
+      "1VkE25r4tY3J-CJkLFZ1ClMlaygmQZbNQ"
+    ],
+    "val": [
+      "1BCv8VtD6hk54ZtnC1YYNYBLlowJlQJcU",
+      "1VKyq7sU5R3pECanfKWUg6JSOneujUvE7"
+    ],
+    "test": [
+      "1TaNHCuVEWdEGDZqe-AMk7KgspeOD3a-4",
+      "10xl4_7z4YOcSpcnAxBI4jtUjt9uaMizI",
+      "1yxb5uKStxGm7nBbs4y7wiY1J5rV6Z51O"
+    ]
+  }
+}
