@@ -1,4 +1,4 @@
-from atcg.data import nearest_accessions, normalize_gtdb_accession
+from ecole.phylogeny import nearest_accessions, normalize_gtdb_accession
 
 
 def test_nearest_accessions_uses_patristic_distance_and_stable_ties() -> None:
